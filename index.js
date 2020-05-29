@@ -61,11 +61,16 @@ function findTheCheese (foods) {
    let food = foods[i]
    //set variable food to represent each food[i] (array element) of the array at each index   
    if (food.includes('cheddar')) {
+     //use if statement to first look and see if the array includes (using include method) the string 'cheddar'
+     //if so, return 'cheddar' as the first cheese in the array 
      return 'cheddar'
    }
+   //if no cheddar, the else if statement to next to see if the array includes 'gouda'
+   //if so, returns 'gouda' as the first cheese in the array 
    else if (food.includes('gouda')) {
      return 'gouda'
    }
+   //if no cheddar and no gouda, else if statemement allows the program to 
    else if (food.includes('camembert')) {
      return 'camembert'
    }
