@@ -1,6 +1,7 @@
+// function called dwarfRollCall takes in an array of dwarf names
 function dwarfRollCall(dwarves) {
   //Loop through an array of dwarves to 
-  //return string of numbered dwarves "1. Doc 2.Dopey 3.Bashful"
+  //return them as a string of numbered dwarves (ie: "1. Doc 2. Dopey") 
   var numberedDwarves = []
     // set new variable to numberedDwarves = empty array to have a place to push a new value of index (+1 because index starts at 0 and I need it to start at 1). and the value of the dwarf at the corresponding index into 
   for (let i = 0 ; i < dwarves.length ; i++) {
