@@ -6,9 +6,10 @@ function dwarfRollCall(dwarves) {
   for (let i = 0 ; i < dwarves.length ; i++) {
     //use a for loop to loop thought all the dwarves in the array
     numberedDwarves.push(`${i+1}. ${dwarves[i]} `)
-    //pushed this value into the new array 
+    //pushed this value into the end of the new array numberedDwarves after each iteration of the loop  
   }
   return numberedDwarves.join("")
+  //retruned the new array with join to join the items of the array into a string 
 }
 
 
