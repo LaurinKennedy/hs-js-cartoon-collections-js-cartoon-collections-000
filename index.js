@@ -4,14 +4,14 @@ function dwarfRollCall(dwarves) {
   //return them as a string of numbered dwarves (ie: "1. Doc 2. Dopey") 
   var numberedDwarves = []
     // set new variable to numberedDwarves = empty array 
-    //because I needed to have a new array to push this information into
+    //because I needed to have a new array to push this string into
     //value of index (+1 because index starts at 0 and I need it to start at 1 to represent a numbered person). 
     //and the value of the dwarf at that corresponding index 
   for (let i = 0 ; i < dwarves.length ; i++) {
     //use a for loop to loop thought all the dwarves in the array
     numberedDwarves.push(`${i+1}. ${dwarves[i]} `)
     //pushed this value into the end of the new array numberedDwarves after each iteration of the loop
-    //used backtics to allow for embedded 
+    //used backtics to allow for embedded expressions ${} in the string 
   }
   return numberedDwarves.join("")
   //retruned the new array with join to join the items of the array into a single string 
