@@ -1,4 +1,4 @@
-// function called dwarfRollCall takes in an array of dwarf names
+// function called dwarfRollCall takes in 1 argument, an array of dwarf names
 function dwarfRollCall(dwarves) {
   //Loop through an array of dwarves to 
   //return them as a string of numbered dwarves (ie: "1. Doc 2. Dopey") 
@@ -17,7 +17,7 @@ function dwarfRollCall(dwarves) {
   //retruned the new array with join method to "join" the items of the array into a single string 
 }
 
-
+//function summonCaptainPlanet takes in one argument, an array of calls called planeteerCalls 
 function summonCaptainPlanet(planeteerCalls) {
   //change array elements to uppercase and add a ! at the end of each element 
   //return an array of elements 
@@ -35,23 +35,31 @@ function summonCaptainPlanet(planeteerCalls) {
   //returned array called upperCase becuase this is the new array with all uppercase letters and an ! at the end of each string (array element)
 }
 
-
+//function called longPlaneteerCalls takes in 1 argument, an array of calls called words 
 function longPlaneteerCalls(words) {
-  // loop thought array to find calls with word length greater than 4 - if none, return 'false'
+  // loop though array to find calls with word length greater than 4 
+  //if none, return 'false'
   for (let i = 0 ; i<words.length ; i++) { 
+    //use a for loop to loop through each call 
    let word = words[i]
+   //set variable word to equal each element of the array of words symbolized by words[i]
    if (word.length>4) {
+     //looked for words[i] one at a time to see if their length is more than 4 characters 
      return true 
+     //returned 'true' as soon as a word was found to have more than 4 characters
    }
   }
   return false 
+  //returned false if after all the iterations of the loop happened and there were no words that are more than 4 characters 
 } 
 
-
+//function called findTheCheese takes 1 argument, an array of foods 
 function findTheCheese (foods) {
   //loop through array elements to find cheeses 'cheddar', 'gouda', or camembert - if no cheese, 'no cheese!' 
   for (let i=0 ; i<foods.length ; i++) { 
+    //use for loop to loop through all the foods in the array 
    let food = foods[i]
+   //set variable food to represent each food[i] (array element) of the array at each index   
    if (food.includes('cheddar')) {
      return 'cheddar'
    }
