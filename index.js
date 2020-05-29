@@ -3,7 +3,7 @@ function dwarfRollCall(dwarves) {
   //Loop through an array of dwarves to 
   //return them as a string of numbered dwarves (ie: "1. Doc 2. Dopey") 
   var numberedDwarves = []
-    // set new variable to numberedDwarves = empty array 
+    //created a new variable: numberedDwarves = empty array 
     //because I needed to have a new array to push this string into
     //value of index (+1 because index starts at 0 and I need it to start at 1 to represent a numbered person). 
     //and the value of the dwarf at that corresponding index 
@@ -22,6 +22,8 @@ function summonCaptainPlanet(planeteerCalls) {
   //change array elements to uppercase and add a ! at the end of each element 
   //return an array of elements 
   var upperCaseCalls = []
+  //created a new variable: upperCaseCalls to equal an empty array
+  //because I needed a new array to push the iterations of the loop into (at the end)
   for (let i=0 ; i<planeteerCalls.length ; i++)
   {
     upperCaseCalls.push(planeteerCalls[i].toUpperCase() + '!') 
