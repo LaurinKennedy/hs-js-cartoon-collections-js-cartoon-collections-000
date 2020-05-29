@@ -2,7 +2,7 @@ function dwarfRollCall(dwarves) {
   //Loop through an array of dwarves to 
   //return string of numbered dwarves "1. Doc 2.Dopey 3.Bashful"
   var numberedDwarves = []
-    // set new variable to numberedDwarves = empty array to push the new value of 
+    // set new variable to numberedDwarves = empty array to have a place to push a new value of index(+1 because index starts at 0 and I need it to start at 1). and the value of the dwarf at the corresponding index 
   for (let i = 0 ; i < dwarves.length ; i++) {
     numberedDwarves.push(`${i+1}. ${dwarves[i]} `)
   }
