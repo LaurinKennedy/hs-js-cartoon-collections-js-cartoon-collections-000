@@ -9,7 +9,7 @@ function dwarfRollCall(dwarves) {
     //pushed this value into the end of the new array numberedDwarves after each iteration of the loop  
   }
   return numberedDwarves.join("")
-  //retruned the new array with join to join the items of the array into a string 
+  //retruned the new array with join to join the items of the array into a single string 
 }
 
 
