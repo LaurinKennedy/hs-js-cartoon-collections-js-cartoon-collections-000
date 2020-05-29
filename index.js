@@ -65,15 +65,17 @@ function findTheCheese (foods) {
      //if so, return 'cheddar' as the first cheese in the array 
      return 'cheddar'
    }
-   //if no cheddar, the else if statement to next to see if the array includes 'gouda'
+   //if no cheddar, the else if statement allows the program to next to see if the array includes the string 'gouda'
    //if so, returns 'gouda' as the first cheese in the array 
    else if (food.includes('gouda')) {
      return 'gouda'
    }
-   //if no cheddar and no gouda, else if statemement allows the program to 
+   //if no cheddar and no gouda, else if statemement allows the program to next see if the array includes the word 'camembert'
+   //if so, returns 'camembert' as the first cheese in the array 
    else if (food.includes('camembert')) {
      return 'camembert'
    }
   }
+  /// if no 'cheddar', 'gouda', or 'camembert' string is incuded in the array, returns 'no cheese!' 
   return 'no cheese!'
 }
