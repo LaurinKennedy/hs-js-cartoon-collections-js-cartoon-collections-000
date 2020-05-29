@@ -11,7 +11,7 @@ function dwarfRollCall(dwarves) {
     //use a for loop to loop thought all the dwarves in the array
     numberedDwarves.push(`${i+1}. ${dwarves[i]} `)
     //pushed this value into the end of the new array numberedDwarves after each iteration of the loop
-    //used backtics to 
+    //used backtics to allow for embedded 
   }
   return numberedDwarves.join("")
   //retruned the new array with join to join the items of the array into a single string 
