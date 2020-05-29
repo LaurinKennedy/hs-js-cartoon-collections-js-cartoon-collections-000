@@ -3,10 +3,8 @@ function dwarfRollCall(dwarves) {
   //return string of numbered dwarves "1. Doc 2.Dopey 3.Bashful"
   var numberedDwarves = []
     // set new variable to numberedDwarves = empty array to push the new value of 
-  let i = 0 
-  while (i < dwarves.length) {
-    numberedDwarves.push(`${i+1}. ${dwarves[i]} `) 
-    i++ 
+  for (let i = 0 ; i < dwarves.length ; i++) {
+    numberedDwarves.push(`${i+1}. ${dwarves[i]} `)
   }
   return numberedDwarves.join("")
 }
