@@ -1,5 +1,8 @@
 function dwarfRollCall(dwarves) {
+  //Loop through an array of dwarves to 
+  //return string of numbered dwarves "1. Doc 2.Dopey 3.Bashful"
   var numberedDwarves = []
+    // set new variable to numberedDwarves = empty array to push the new value of 
   let i = 0 
   while (i < dwarves.length) {
     numberedDwarves.push(`${i+1}. ${dwarves[i]} `) 
@@ -10,6 +13,8 @@ function dwarfRollCall(dwarves) {
 
 
 function summonCaptainPlanet(planeteerCalls) {
+  //change array elements to uppercase and add a ! at the end of each element 
+  //return an array of elements 
   var upperCaseCalls = []
   for (let i=0 ; i<planeteerCalls.length ; i++)
   {
@@ -20,6 +25,7 @@ function summonCaptainPlanet(planeteerCalls) {
 
 
 function longPlaneteerCalls(words) {
+  // loop thought array to find calls with word length greater than 4 - if none, return 'false'
   for (let i = 0 ; i<words.length ; i++) { 
    let word = words[i]
    if (word.length>4) {
@@ -31,7 +37,7 @@ function longPlaneteerCalls(words) {
 
 
 function findTheCheese (foods) {
-  //loop through array to find cheeses 'cheddar', 'gouda', or camembert 
+  //loop through array elements to find cheeses 'cheddar', 'gouda', or camembert - if no cheese, 'no cheese!' 
   for (let i=0 ; i<foods.length ; i++) { 
    let food = foods[i]
    if (food.includes('cheddar')) {
